@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./images/pattern-curve.svg') no-repeat bottom;
+    background-size: 75%;
+    background-position-x: 0;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+main .image {
+    background: url('./images/pattern-bg.svg') no-repeat center/contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2.8rem;
+}
+
+main .image .photo{
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(16, 16, 48, 0.3);
+}
+
+main .image .btn {
+    position: absolute;
+    bottom: 1.4rem;
+    background: white;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px hsla(240, 38%, 20%,0.6);
+}
+
+main .image .btn .btn-icon {
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+main .image .btn .btn-icon:nth-child(1) {
+    padding-left: .4rem;
+    padding-right: 1rem;
+}
+
+main .image .btn .btn-icon:nth-child(2) {
+    padding-left: 1rem;
+    padding-right: 0.4rem;
+}
+
+
+main .content {
+    margin-top: 2rem;
+    background: url('./images/pattern-quotes.svg') no-repeat center;
+    background-position-y: 0;
+    background-size: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+}
+
+main .content p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: hsl(240, 38%, 20%);
+    font-weight: 300;
+}
+
+main .content h1 {
+    padding-top: 2rem;
+    color: hsl(240, 38%, 20%);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main .content h1 span {
+    color: hsl(240, 18%, 77%);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 40%;
+    }
+    
+    main {
+        /* height: 800px; */
+        display: flex;
+        margin: 0 3rem;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        position: relative;
+    }
+    
+    main .image {
+        width: 200%;
+        height: 90%;
+        top: 15%;
+        right: 0;
+        margin-left: -350px;
+        padding: 2.8rem;
+    }
+
+    main .image .photo {
+        width: 70%;
+    }
+
+    main .image .btn {
+        left: 25%;
+    }
+
+    main .content {
+        background-position: top;
+        background-position-x: 30%;
+        background-size: 10%;
+        padding-left: 5rem;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    main .content p {
+        /* position: absolute; */
+        text-align: left;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 2rem;
+        line-height: 3rem;
+        z-index: 1;
+    }
+
+    main .content h1{
+        text-align: left;
+        padding-left: 100px;
+
+    }
+
+    main .content h1 br{
+        display: none;
+    }
+}
